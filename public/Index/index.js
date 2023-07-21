@@ -49,7 +49,7 @@ async function displayGroupOnLoad() {
         const groupName = serverResponse.data.groups;
         if (groupName) {
             groupName.forEach((group) => { 
-    groupList.innerHTML += `<li class="btn btn-dark w-100 border border-0 p-2 ps-4 pt-3 mb-2 fw-bolder" style="color:orange;"  id=${group.id}>${group.name}<button class="del btn float-end" style="height:50px;padding-top:0%;;color:gray">x</button></li>`}) }
+    groupList.innerHTML += `<li class="btn btn-dark w-100 border border-0 p-2 ps-4 pt-3 mb-2 fw-bolder" style="color:orange;"  id=${group.id}>${group.name}<button class="del btn float-end" style="color:gray">&times;</button></li>`}) }
     } catch (error) {
         console.log(error)}
 }
